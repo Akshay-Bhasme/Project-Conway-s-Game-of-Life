@@ -37,7 +37,7 @@ import time
 dead = 0
 live = 1
 
-class Grid():
+class Grid:
     '''This class contains methods to create a board of all the cells'''
     def dead_phase(height, width):
         '''This method creates list ot lists of dead cells only(i.e.=0)'''
@@ -109,7 +109,7 @@ class Grid():
             Grid.render(next_state)
             next_state = Grid.later_board_state(next_state)
             time.sleep(0.03)
-class Cell():
+class Cell:
     '''This class contains methods to determine state of the cell'''
     def next_cell_val(cell_cordinates, phase):
         '''This method defines the next state of the cell'''
